@@ -1,0 +1,26 @@
+kind: project
+metadata:
+  name: testing-workdir
+  created: '2023-03-26T07:22:52.792000'
+spec:
+  functions:
+  - name: add-1
+    kind: job
+    image: mlrun/mlrun
+    handler: add_1.add_1
+    with_repo: true
+  - name: add-2
+    kind: job
+    image: mlrun/mlrun
+    handler: add_2.add_2
+    with_repo: true
+  workflows:
+  - path: ./test_remote_workflow_subpath/workflow.py
+    name: main
+  artifacts: []
+  conda: ''
+  source: git://github.com/mlrun/system-tests.git#master
+  subpath: ./test_remote_workflow_subpath
+  origin_url: git://github.com/mlrun/system-tests.git#master
+  load_source_on_run: true
+  desired_state: online
