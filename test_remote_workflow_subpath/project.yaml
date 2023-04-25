@@ -1,6 +1,6 @@
 kind: project
 metadata:
-  name: testing-workdir-shapira
+  name: testing-workdir
   created: '2023-03-26T07:22:52.792000'
 spec:
   functions:
@@ -24,6 +24,3 @@ spec:
   origin_url: git://github.com/mlrun/system-tests.git#master
   load_source_on_run: true
   desired_state: online
-  owner: shapira
-status:
-  state: online
