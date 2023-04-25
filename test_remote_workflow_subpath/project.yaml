@@ -19,8 +19,8 @@ spec:
     name: main
   artifacts: []
   conda: ''
-  source: git://github.com/mlrun/system-tests.git#master
+  source: git://github.com/mlrun/system-tests.git#main
   subpath: ./test_remote_workflow_subpath
-  origin_url: git://github.com/mlrun/system-tests.git#master
+  origin_url: git://github.com/mlrun/system-tests.git#main
   load_source_on_run: true
   desired_state: online
